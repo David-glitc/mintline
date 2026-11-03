@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Schibsted+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500;600&display=swap');
+/* Mintline: an opening night at a small gallery; collectors walk the wall and mint from the placard. Gallery black, cream mats, mint and riso violet. */
+:root{--scheme:dark;--bg:#0E0E11;--surface:#16161B;--surface-2:#1D1D24;--input-bg:#0A0A0D;--tile:#1D1D24;
+ --ink:#F5F3EE;--ink-2:#B5B2AA;--line:#2A2A33;--line-strong:#6F6C79;
+ --accent:#5CF2B8;--accent-hover:#8AF6CC;--accent-ink:#04140D;--accent-text:#6FF4C2;--link:#AB9DFF;--focus:#AB9DFF;
+ --danger:#FF6F7D;--danger-bg:#2B1117;--danger-text:#FFA2AB;--scrim:rgba(5,5,7,.82);
+ --radius-sm:2px;--radius-md:4px;--radius-lg:6px;--radius-btn:2px;--radius-pill:999px;--border-w:1px;
+ --shadow-1:0 20px 44px rgba(0,0,0,.5);--shadow-2:0 34px 80px rgba(0,0,0,.65);--shadow-btn:none;
+ --font-display:'DM Serif Display',Georgia,serif;--font-body:'Schibsted Grotesk',system-ui,sans-serif;--font-label:'Schibsted Grotesk',system-ui,sans-serif;--font-mono:'Spline Sans Mono',ui-monospace,monospace;
+ --display-weight:400;--display-tracking:-0.01em;--display-case:none;--label-tracking:.2em;
+ --hero-bg:radial-gradient(30% 60% at 70% 0%,rgba(245,243,238,.16),transparent 70%),radial-gradient(40% 40% at 72% 60%,rgba(92,242,184,.14),transparent 70%),radial-gradient(40% 40% at 20% 90%,rgba(171,157,255,.14),transparent 70%),var(--bg);
+ --hero-pattern:repeating-linear-gradient(0deg,transparent 0 11px,rgba(245,243,238,.06) 11px 12px);--hero-pattern-size:auto;--hero-pattern-opacity:1;
+ --chip-bg:rgba(22,22,27,.9);--live:#5CF2B8;--live-ring:rgba(92,242,184,.26);--art-glow:radial-gradient(circle,rgba(92,242,184,.4),rgba(171,157,255,.25) 55%,transparent 72%);--ticker-bg:#121216}
+/* Signature: placard steps on a wall rail, italic serif accents, framed CTA. */
+h1 em,h2 em{font-style:italic}
+.steps li{background:#EDE7DA;color:#141418;border:0;border-radius:var(--radius-sm);box-shadow:0 1px 0 #fff inset,var(--shadow-1)}
+.steps li h3{color:#141418;font-size:1.3rem}.steps li p{color:#4A4740}
+.steps li:before{color:#1E7A55;font-family:var(--font-mono)}
+.features div{border-left:0;padding:16px 0 0;border-top:1px solid var(--line-strong)}
+.features h3{font-style:italic}
+.cta-band{border:12px solid #050506;outline:1px solid var(--line-strong);background:radial-gradient(60% 120% at 50% -20%,rgba(245,243,238,.10),transparent 60%),var(--surface)}
+.ticker span{font-family:var(--font-mono)}
+.ticker span:after{width:14px;height:3px;border-radius:0}
+
+/* App: the gallery. */
+.composer-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end;margin-bottom:8px}
+.composer-head h2{margin:8px 0 6px;font-size:clamp(1.8rem,3vw,2.4rem)}
+.composer-head p{margin:0;max-width:52ch}
+.sample{display:flex;gap:8px}
+.sample img{width:86px;height:86px;border:5px solid #EDE7DA;outline:3px solid #050506;display:block}
+.sample img:nth-child(2){transform:translateY(-8px)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:34px 26px;padding-top:6px}
+.frame-card{display:flex;flex-direction:column;scroll-margin-top:24px}
+.frame{position:relative;padding:12px;background:#050506;box-shadow:0 0 0 1px #2A2A33,0 30px 50px -20px rgba(0,0,0,.9)}
+.frame:before{content:'';position:absolute;left:10%;right:10%;top:-28px;height:40px;background:radial-gradient(50% 100% at 50% 0%,rgba(245,243,238,.22),transparent 70%);pointer-events:none}
+.mat{padding:16px;background:#EDE7DA}
+.mat img{display:block;width:100%;height:auto;aspect-ratio:1}
+.external{display:grid;place-content:center;gap:6px;aspect-ratio:1;padding:16px;text-align:center;background:repeating-linear-gradient(45deg,#E2DBCB 0 10px,#EDE7DA 10px 20px);color:#141418}
+.external .sub{color:#4A4740;margin:0}
+.external a{color:#3B2FA8;overflow-wrap:anywhere}
+.phase{position:absolute;top:22px;left:22px;background:rgba(5,5,6,.85)}
+.placard{margin-top:16px;padding:16px;background:var(--surface-2);border:1px solid var(--line)}
+.placard h3{margin:0 0 4px;font-size:1.5rem;overflow-wrap:anywhere}
+.edition{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:center;margin:12px 0}
+.edition .meter{margin:0}
+.edition .meter i{background:linear-gradient(90deg,var(--accent),var(--link))}
+.placard .figs{grid-template-columns:repeat(3,minmax(0,1fr))}
+.mint-row{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;align-items:center}
+.mint-row>button{width:100%}
+.stepper{display:flex;align-items:center;border:1px solid var(--line-strong)}
+.stepper button{min-height:44px;width:40px;padding:0;border:0;font-size:1.2rem}
+.stepper output{min-width:34px;text-align:center;font-family:var(--font-mono);font-size:1.05rem}
+.placard .tiny{margin:10px 0 0}
+.placard form button[type=submit]{margin-top:10px}
+.empty.gallery-empty{border:1px dashed var(--line-strong)}
+@media(max-width:700px){.composer-head{grid-template-columns:1fr}.sample img{width:70px;height:70px}}

@@ -1,0 +1,9 @@
+{
+  "localOnly": true,
+  "chainId": 677,
+  "checkedAt": "2026-11-03T09:48:13.412Z",
+  "mintline": {
+    "flow": "create collection → mint 1 → withdraw",
+    "collection": "0xD0fb0B9c6035d2ad51C379711d2eF4e00335332f"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "chainId": 677,
+  "network": "mainnet",
+  "deployer": "0x766d0d810eCF822e02df47CDb5A389777f291895",
+  "local": false,
+  "contracts": {
+    "MintlineFactory": "0xda9f6e137f419516a22ca8e0e3909aa0a0a7b5ba"
+  },
+  "actions": {
+    "deploy:MintlineFactory": {
+      "hash": "0xffb530514e57d43781e96de9d803227a246e1bfe7c2b943fd004440c6fcb1e17",
+      "receipt": {
+        "transactionHash": "0xffb530514e57d43781e96de9d803227a246e1bfe7c2b943fd004440c6fcb1e17",
+        "contractAddress": "0xda9f6e137f419516a22ca8e0e3909aa0a0a7b5ba",
+        "blockNumber": "28953538",
+        "gasUsed": "3582511",
+        "gasPrice": "20000000000"
+      }
+    }
+  },
+  "gasSpentWei": "209669280000000000",
+  "ready": true,
+  "infrastructure": {
+    "USDT": "0xaBabc7Ddc03e501d190C676BF3d92ef0e6e87a3C",
+    "WBOT": "0xD5452816194a3784dBa983426cCe7c122F4abd30",
+    "router": "0x07032d47A1b9f8460cBeE9dC17c1d3E438693929",
+    "quoter": "0x034A705b36067cff99ABf5C662Be881cBd8d0176",
+    "fee": 3000
+  },
+  "launched": {
+    "mintline": "2026-11-03T09:53:13.416Z"
+  },
+  "sourceHashes": {
+    "MintlineFactory": "0xf0dc9e709e141ac8590c563888dc4c6843ad404acd2b3484c990ab2017cc0cb3"
+  }
+}
